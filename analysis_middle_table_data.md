@@ -9,7 +9,7 @@
 | char | | |
 | float | | |
 
-### 拡張型情報
+### 拡張型情報 (expand_type extent type as type)
 | 型 | 中間コード | 抽出の実装 |
 |:-:|:-:|:-:|
 | pointer | `<type> *` | ○ |
