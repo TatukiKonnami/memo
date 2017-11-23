@@ -13,7 +13,7 @@
 | 型 | 中間コード | 抽出の実装 |
 |:-:|:-:|:-:|
 | pointer | `<type> *` | ○ |
-| array | `[ num × <type> ]` |  |
+| array | `[ <elements> × <type> ]` |  |
 
 ## 型システム
 ### function type
