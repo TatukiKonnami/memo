@@ -6,8 +6,8 @@
 | integer | i32 |  |
 | double | double |  |
 | void | void | |
-| char | | |
-| float | | |
+| char | i8 | |
+| float | float | |
 
 ### 拡張型情報 (expand_type extent type as type)
 | 型 | 中間コード | 備考 |
@@ -25,6 +25,7 @@
 |:-:|:-:|:-:|
 | add | add | |
 | sub | sub |  |
-| mul |  | |
-| div |  | |
+| mul | mul | |
+| div | sdiv | |
+| rem | srem | |
 
