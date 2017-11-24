@@ -1,18 +1,18 @@
 # 定義情報
 ## 型情報
 ### 型情報(type)
-| 型 | 中間コード | 抽出の実装 |
+| 型 | 中間コード | 備考 |
 |:-:|:-:|:-:|
-| integer | i32 | 〇 |
-| double | double | 〇 |
+| integer | i32 |  |
+| double | double |  |
 | void | void | |
 | char | | |
 | float | | |
 
 ### 拡張型情報 (expand_type extent type as type)
-| 型 | 中間コード | 抽出の実装 |
+| 型 | 中間コード | 備考 |
 |:-:|:-:|:-:|
-| pointer | `<type> *` | ○ |
+| pointer | `<type> *` |  |
 | array | `[ <elements> × <type> ]` |  |
 
 ## 型システム
@@ -21,7 +21,7 @@
 
 ## 演算子情報
 ### 演算子
-| 演算子 | 中間コード | 抽出の実装 |
+| 演算子 | 中間コード | 備考 |
 |:-:|:-:|:-:|
 | add | add | |
 | sub | sub |  |
