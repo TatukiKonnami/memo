@@ -29,3 +29,5 @@
 | div | sdiv | |
 | rem | srem | |
 
+### 演算
+```  <operator> <type> <type> <registar> ```
