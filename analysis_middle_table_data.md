@@ -14,6 +14,8 @@
 |:-:|:-:|:-:|
 | pointer | `<type> *` |  |
 | array | `[ <elements> × <type> ]` |  |
+| structure | ` %mytype = <type> { <type list> }   ` | |
+| opaque | `%mytype = <type> opaque` | 未定義な構造体 |
 
 ## 型システム
 ### function type
@@ -31,3 +33,11 @@
 
 ### 演算
 ```  <operator> <type> <type> <registar> ```
+
+## 終端命令
+### 終端命令
+| 終端命令 | 中間コード | 備考 |
+|:-:|:-:|:-:|
+| ret | `ret <type> <value>` | |
+| br | `br i1 <cond>, label <iftrue>, label <iffalse>` | |
+| switch | `switch <intty> <value>, label <defaultdest> [ <intty> <val>, label <dest> ... ]` | |
