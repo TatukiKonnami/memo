@@ -41,3 +41,8 @@
 | ret | `ret <type> <value>` | |
 | br | `br i1 <cond>, label <iftrue>, label <iffalse>` | |
 | switch | `switch <intty> <value>, label <defaultdest> [ <intty> <val>, label <dest> ... ]` | |
+
+# AST block
+## ループ命令
+- WhileStmt
+- ForStmt
