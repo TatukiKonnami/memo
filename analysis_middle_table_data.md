@@ -46,3 +46,5 @@
 ## ループ命令
 - WhileStmt
 - ForStmt
+
+`Ast勉強wiki参照`
