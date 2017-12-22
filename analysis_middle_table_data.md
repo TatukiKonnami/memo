@@ -57,6 +57,8 @@ alignは指定したバイト数でアラインメント｡ 領域が確保で�
 | br | `br i1 <cond>, label <iftrue>, label <iffalse>` | |
 | switch | `switch <intty> <value>, label <defaultdest> [ <intty> <val>, label <dest> ... ]` | |
 
+## グローバル変数
+``` global <type> <value> ```
 ## Function system
 
 ## 最小ブロック
