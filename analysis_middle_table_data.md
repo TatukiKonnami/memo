@@ -59,6 +59,9 @@ alignは指定したバイト数でアラインメント｡ 領域が確保で�
 
 ## Function system
 
+## 最小ブロック
+``` label  ```
+
 
 # AST block
 ## ループ命令
