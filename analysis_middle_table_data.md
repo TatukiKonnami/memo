@@ -17,7 +17,7 @@ alignは指定したバイト数でアラインメント｡ 領域が確保で�
 ### 型情報(type)
 | 型 | 中間コード | 備考 |
 |:-:|:-:|:-:|
-| integer | i32 |  |
+| integer | iN | N=ビット数 1ビット~223-1（約800万） |
 | double | double |  |
 | void | void | |
 | char | i8 | |
