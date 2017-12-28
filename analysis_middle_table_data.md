@@ -94,10 +94,41 @@ alignは指定したバイト数でアラインメント｡ 領域が確保で�
 | icmp | `result = icmp <cond> <type> <op1>, <op2>` | |
 | fcmp | `result = fcmp <cond> <type> <op1>, <op2>` | |
 
+###  cond
+| cond | 備考 |
+|:-:|:-:|
+| eq | |
+| ne | |
+| ugt | |
+| uge | |
+| ult | |
+| ule | |
+| sgt | |
+| sge | |
+| slt | |
+| sle | |
+| false | |
+| oeq | |
+| ogt | |
+| olt | |
+| one | |
+| ord | |
+| ueq | |
+| ugt | |
+| uge | |
+| ult | |
+| ule | |
+| une | |
+| uno | |
+| true | |
+
+
 ## 関数呼び出し
 | 命令 | 中間コード | 備考 |
 |:-:|:-:|:-:|
 | call | `result = call <type> (<function args>) @<function>` | |
+
+
 
 
 ## 終端命令
