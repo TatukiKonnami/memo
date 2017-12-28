@@ -30,7 +30,8 @@ alignは指定したバイト数でアラインメント｡ 領域が確保で�
 | pointer | `<type> *` |  |
 | array | `[ <elements> × <type> ]` |  |
 | structure | ` %mytype = <type> { <type list> }   ` | |
-| opaque | `%mytype = <type> opaque` | 未定義な構造体 |
+| opaque | `%mytype = <type> opaque` | 未定義な構造体(前方宣言) |
+| function | ` %mytype = <returntype> (<parameter list>) ` | |
 
 ## 型システム
 ### function type
@@ -40,11 +41,18 @@ alignは指定したバイト数でアラインメント｡ 領域が確保で�
 ### 演算子
 | 演算子 | 中間コード | 備考 |
 |:-:|:-:|:-:|
-| add | add | |
-| sub | sub |  |
-| mul | mul | |
-| div | sdiv | |
-| rem | srem | |
+| add | `result = add < | nuw | nsw > <type> <op1>, <op2>` | <op1><op2>は値 |
+| fadd | `result = fadd <type> <op1>, <op2>` | <op1><op2>は値 |
+| sub | `result = sub < | nuw | nsw > <type> <op1>, <op2>` |  |
+| fsub | `result = fsub  <type> <op1>, <op2>` |  |
+| mul | `result = mul < | nuw | nsw > <type> <op1>, <op2>` | |
+| fmul | `result = fmul <type> <op1>, <op2>` | |
+| udiv | `result = udiv < | exact > <type> <op1>, <op2>` | |
+| sdiv | `result = sdiv < | exact > <type> <op1>, <op2>` | |
+| fdiv | `result = fdiv  <type> <op1>, <op2>` |  |
+| urem | `result = urem  <type> <op1>, <op2>` | |
+| srem | `result = srem  <type> <op1>, <op2>` | |
+| frem | `result = frem  <type> <op1>, <op2>` | |
 
 ### 演算
 ```  <operator> <type> <type> <registar> ```
