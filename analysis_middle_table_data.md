@@ -72,6 +72,22 @@ alignは指定したバイト数でアラインメント｡ 領域が確保で�
 | getelementptr | `result = getelementptr inbounds <type>, <type>* <registar> , <type> <value>`| |  
 
 
+## キャスト
+| 命令 | 中間コード | 備考 |
+|:-:|:-:|:-:|
+| trunc to | `result = trunc <type> <value> to <type>` | |
+| zext to | `result = zext <type> <value> to <type>` | |
+| sext to | `result = sext <type> <value> to <type>` | |
+| fptrunc to | `result = fptrunc <type> <value> to <type>` | |
+| fpext to | `result = fpext <type> <value> to <type>` | |
+| fptoui to | `result = fptoui <type> <value> to <type>` | |
+| fptosi to | `result = fptosi <type> <value> to <type>` | |
+| uitofp to | `result = uitofp <type> <value> to <type>` | |
+| sitofp to | `result = sitofp <type> <value> to <type>` | |
+| ptrtoint to | `result = ptrtoint <type> <value> to <type>` | |
+| inttoptr to | `result = inttoptr <type> <value> to <type>` | |
+| bitcast to | `result = bitcast <type> <value> to <type>` | |
+
 ## 終端命令
 ### 終端命令
 | 終端命令 | 中間コード | 備考 |
@@ -79,6 +95,8 @@ alignは指定したバイト数でアラインメント｡ 領域が確保で�
 | ret | `ret <type> <value>` | |
 | br | `br i1 <cond>, label <iftrue>, label <iffalse>` | |
 | switch | `switch <intty> <value>, label <defaultdest> [ <intty> <val>, label <dest> ... ]` | |
+
+
 
 ## グローバル変数
 ``` global <type> <value> ```
