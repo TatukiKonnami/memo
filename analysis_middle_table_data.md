@@ -88,6 +88,18 @@ alignは指定したバイト数でアラインメント｡ 領域が確保で�
 | inttoptr to | `result = inttoptr <type> <value> to <type>` | |
 | bitcast to | `result = bitcast <type> <value> to <type>` | |
 
+## 比較命令
+| 命令 | 中間コード | 備考 |
+|:-:|:-:|:-:|
+| icmp | `result = icmp <cond> <type> <op1>, <op2>` | |
+| fcmp | `result = fcmp <cond> <type> <op1>, <op2>` | |
+
+## 関数呼び出し
+| 命令 | 中間コード | 備考 |
+|:-:|:-:|:-:|
+| call | `result = call <type> (<function args>) @<function>` | |
+
+
 ## 終端命令
 ### 終端命令
 | 終端命令 | 中間コード | 備考 |
