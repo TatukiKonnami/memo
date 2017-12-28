@@ -53,9 +53,17 @@ alignは指定したバイト数でアラインメント｡ 領域が確保で�
 | urem | `result = urem  <type> <op1>, <op2>` | |
 | srem | `result = srem  <type> <op1>, <op2>` | |
 | frem | `result = frem  <type> <op1>, <op2>` | |
+| shl | `result = shl < | nuw | nsw > <type> <op1>, <op2>` | 左シフト |
+| lshr | `result = lshr < | exact > <type> <op1>, <op2>` | 論理右シフト |
+| ashr | `result = lshr < | exact > <type> <op1>, <op2>` | 算術右シフト |
+| and | `result = and <type> <op1>, <op2>` | 論理積 |
+| or | `result = or <type> <op1>, <op2>` | 論理和 |
+| xor | `result = xor <type> <op1>, <op2>` | 排他的論理和 |
+
+
 
 ### 演算
-```  <operator> <type> <type> <registar> ```
+``` result =  <operator> < | nuw | nsw | exact> <type> <type> <registar> ```
 
 ## 終端命令
 ### 終端命令
