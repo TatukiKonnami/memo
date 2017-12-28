@@ -60,10 +60,17 @@ alignは指定したバイト数でアラインメント｡ 領域が確保で�
 | or | `result = or <type> <op1>, <op2>` | 論理和 |
 | xor | `result = xor <type> <op1>, <op2>` | 排他的論理和 |
 
-
-
 ### 演算
 ``` result =  <operator> < | nuw | nsw | exact> <type> <type> <registar> ```
+
+## メモリアクセス
+| 命令 | 中間コード | 備考 |
+|:-:|:-:|:-:|
+| alloca | 'result = alloca <type> [, <type> <NumElements>] [, align <alignment>]' | |
+| load | 'result = load <type> <type>* <registar> [, align <alignment>]' | |
+| store | 'store <type> <value>, <type>* <registar> [, align <alignment>]'| |
+| getelementptr | 'result = getelementptr inbounds <type>, <type>* <registar> [, <type> <value>]'| |  
+
 
 ## 終端命令
 ### 終端命令
